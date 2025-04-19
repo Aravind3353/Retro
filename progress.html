@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="progress-page">
+    <nav class="navbar">
+        <div class="logo">Retro Fitness</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+<br>
+    <h1>Workout Progress</h1>
+
+    <div class="progress-summary">
+        <h2>Total Calories Burnt: <span id="total-burnt">0</span> kcal</h2>
+    </div>
+
+    <div class="history-container">
+        <h2>Workout History</h2>
+        <ul id="workout-history"></ul>
+    </div>
+
+    <div class="motivation">
+        <h3 id="motivation-text">Keep pushing forward! 💪</h3>
+    </div><br>
+
+</body>
+</html> 

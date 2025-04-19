@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Entry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="workout-entry-page">
+    <nav class="navbar">
+        <div class="logo">Retro Fitness</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+<br><h2 style="text-align:center; margin-top: 200px; "> <span class="red-text">Enter the Workout you want to do and save the workout after it was Done!</span></h5>
+    <div class="workout-entry-container">
+        <h1 id="workout-title">Workout</h1>
+        <label for="sets">Sets:</label>
+        <input type="number" id="sets" min="1" placeholder="Enter sets">
+
+        <label for="reps">Repetitions:</label>
+        <input type="number" id="reps" min="1" placeholder="Enter repetitions">
+        <button onclick="saveWorkout()">Save Workout</button>
+    </div>
+</body>
+</html>

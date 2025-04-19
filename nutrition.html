@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="nutrition-page">
+    
+    <nav class="navbar">
+        <div class="logo">Retro Fitness</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+    </nav>
+<br>
+    <h1>Meal Planning & Calorie Tracking</h1>
+
+    <div class="meal-grid">
+        <div class="meal-item">
+            <img src="images/breakfast.jpg" alt="Breakfast">
+            <h3>Breakfast</h3>
+            <input type="text" id="breakfast" placeholder="Enter meal">
+            <input type="number" id="breakfast-calories" placeholder="Calories">
+            <button onclick="addMeal('breakfast')">Add</button>
+        </div>
+
+        <div class="meal-item">
+            <img src="images/lunch.jpg" alt="Lunch">
+            <h3>Lunch</h3>
+            <input type="text" id="lunch" placeholder="Enter meal">
+            <input type="number" id="lunch-calories" placeholder="Calories">
+            <button onclick="addMeal('lunch')">Add</button>
+        </div>
+
+        <div class="meal-item">
+            <img src="images/snacks.jpg" alt="Snacks">
+            <h3>Snacks</h3>
+            <input type="text" id="snacks" placeholder="Enter meal">
+            <input type="number" id="snacks-calories" placeholder="Calories">
+            <button onclick="addMeal('snacks')">Add</button>
+        </div>
+
+        <div class="meal-item">
+            <img src="images/dinner.jpg" alt="Dinner">
+            <h3>Dinner</h3>
+            <input type="text" id="dinner" placeholder="Enter meal">
+            <input type="number" id="dinner-calories" placeholder="Calories">
+            <button onclick="addMeal('dinner')">Add</button>
+        </div>
+    </div>
+     <div class="total-calories">
+        <h2>Total Calories: <span id="total-calories">0</span> kcal</h2>
+    </div>
+</body>
+</html> 

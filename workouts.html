@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="workouts-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Retro Fitness</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><button onclick="logout()">Logout</button></li>
+        </ul>
+        <div class="menu-toggle">&#9776;</div>
+    </nav>
+<br>
+    <!-- Workout Grid -->
+    <h1>Choose Your Workout</h1>
+    <div class="workout-grid">
+        <!-- Example Workout Items -->
+        <div class="workout-item">
+            <img src="images/pushups.jpg" alt="Push-ups">
+            <button onclick="selectWorkout('Push-ups')">Push-ups</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/squats.jpg" alt="Squats">
+            <button onclick="selectWorkout('Squats')">Squats</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/jj.jpg" alt="Jumping Jacks">
+            <button onclick="selectWorkout('Jumping Jacks')">Jumping Jacks</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/plank.jpg" alt="Plank">
+            <button onclick="selectWorkout('Plank')">Plank</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/deadlifts.jpg" alt="Deadlifts">
+            <button onclick="selectWorkout('Deadlifts')">Deadlifts</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/benchpress.jpg" alt="Bench Press">
+            <button onclick="selectWorkout('Bench Press')">Bench Press</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/pullups.jpg" alt="Pull-ups">
+            <button onclick="selectWorkout('Pull-ups')">Pull-ups</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/lunges.jpg" alt="Lunges">
+            <button onclick="selectWorkout('Lunges')">Lunges</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/shoulderpress.jpg" alt="Shoulder Press">
+            <button onclick="selectWorkout('Shoulder Press')">Shoulder Press</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/crunches.jpg" alt="Crunches">
+            <button onclick="selectWorkout('crunches')">Crunches</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/treadmill.jpg" alt="Treadmill">
+            <button onclick="selectWorkout('Treadmill')">Treadmill</button>
+        </div>
+        <div class="workout-item">
+            <img src="images/legraises.jpg" alt="Leg Raises">
+            <button onclick="selectWorkout('Leg Raises')">Leg Raises</button>
+        </div>
+    </div>
+</body>
+</html>
