@@ -8,28 +8,24 @@ app.use(bodyParser.json());
 
 // Database Connection
 const mysql = require('mysql2');
-
-const connection = mysql.createConnection({
+const db = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
-  port: process.env.DB_PORT,
-  ssl: {
-    // 🛠 This is the fix
-    rejectUnauthorized: false
-  }
+  port: process.env.DB_PORT
 });
 
-connection.connect((err) => {
+db.connect(err => {
   if (err) {
     console.error('Database connection failed: ' + err.stack);
     return;
   }
-  console.log('Connected to Railway MySQL database.');
+  console.log('Connected to local MySQL database.');
 });
 
-module.exports = connection;
+
+module.exports = db;
 
 // Register User & Initialize Progress
 app.post("/register", (req, res) => {
