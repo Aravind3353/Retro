@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+function explore() {
+  window.location.href = "workouts.html";
+}
 
 // Register User
 function registerUser() {
